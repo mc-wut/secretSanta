@@ -29,7 +29,7 @@ PERMANENT_EXCLUSIONS = {
     "ruthie": {"tom"},
     "matt": {"stacy"},
     "tom": {"ruthie"},
-    "stacy": "matt",
+    "stacy": {"matt"},
     "bob": set(),
     "eddie": set(),
     "maggie": set()
