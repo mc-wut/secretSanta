@@ -1,0 +1,62 @@
+{
+  "participants": {
+    "ruthie": {
+      "display": "Alice",
+      "password_hash": "REPLACE_WITH_HASH"
+    },
+    "bob": {
+      "display": "Bob",
+      "password_hash": "REPLACE_WITH_HASH"
+    },
+    "matt": {
+      "display": "Charlie",
+      "password_hash": "REPLACE_WITH_HASH"
+    },
+    "tom": {
+      "display": "Dave",
+      "password_hash": "REPLACE_WITH_HASH"
+    },
+    "stacy": {
+      "display": "Eve",
+      "password_hash": "REPLACE_WITH_HASH"
+    },
+    "eddie": {
+      "display": "Frank",
+      "password_hash": "REPLACE_WITH_HASH"
+    },
+    "maggie": {
+      "display": "Grace",
+      "password_hash": "REPLACE_WITH_HASH"
+    }
+  },
+    "history": {
+        "2023": {
+        "ruthie": "",
+        "bob": "",
+        "matt": "",
+        "tom": "",
+        "stacy": "",
+        "eddie": "",
+        "maggie": ""
+        },
+        "2024": {
+        "ruthie": "",
+        "bob": "",
+        "matt": "",
+        "tom": "",
+        "stacy": "",
+        "eddie": "",
+        "maggie": ""
+        },
+        "2025": {
+        "ruthie": "",
+        "bob": "",
+        "matt": "",
+        "tom": "",
+        "stacy": "",
+        "eddie": "",
+        "maggie": ""
+        }
+    },
+  "assignments": {}
+}
