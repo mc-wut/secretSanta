@@ -2,11 +2,11 @@
   "participants": {
     "ruthie": {
       "display": "Ruthie",
-      "password_hash": "REPLACE_WITH_HASH"
+      "password_hash": "pbkdf2:sha256:260000$fYBTLZ9PFOMTX3LF$c36a501e53c6f0e5d01a3894abb5a5f9ac54043e478682d7efda1fdf2dd3a8d9"
     },
     "bob": {
       "display": "Bob",
-      "password_hash": "REPLACE_WITH_HASH"
+      "password_hash": "pbkdf2:sha256:260000$dUKAcU0jRsf9GB3R$d3ae75472c59d27cc261ae2d523395bbe205c079d93a3efc0a8d1753059f1e1e"
     },
     "matt": {
       "display": "Matt",
@@ -14,49 +14,59 @@
     },
     "tom": {
       "display": "Tom",
-      "password_hash": "REPLACE_WITH_HASH"
+      "password_hash": "pbkdf2:sha256:260000$UNa5z9XXaCFaTPuf$b0c66beeb3aaf0820f8d7c7f359c33e1c397972deb65a0fe960caf722c65b188"
     },
     "stacy": {
       "display": "Stacy",
-      "password_hash": "REPLACE_WITH_HASH"
+      "password_hash": "pbkdf2:sha256:260000$hFZtiFw3q577cwyy$343ead5fe02d9bb9c6551cb72aafb2d960c477ace3c71598f7c3daca15654942"
     },
     "eddie": {
       "display": "Eddie",
-      "password_hash": "REPLACE_WITH_HASH"
+      "password_hash": "pbkdf2:sha256:260000$Xy1Zt4h1gLFSMFrb$2b35384c7c776243fd143556787cf9c50c9f9fc2f359d790361dd86d863ecaa9"
     },
     "maggie": {
       "display": "Maggie",
-      "password_hash": "REPLACE_WITH_HASH"
+      "password_hash": "pbkdf2:sha256:260000$UHqfSLu1PuyEdfZK$7c6d380f97271851dec864da80f1bfab7420741eb6322c11b184a205c6a0d672"
     }
   },
-    "history": {
-        "2023": {
-        "ruthie": "",
-        "bob": "",
-        "matt": "",
-        "tom": "",
-        "stacy": "",
-        "eddie": "",
-        "maggie": ""
-        },
-        "2024": {
-        "ruthie": "",
-        "bob": "",
-        "matt": "",
-        "tom": "",
-        "stacy": "",
-        "eddie": "",
-        "maggie": ""
-        },
-        "2025": {
-        "ruthie": "",
-        "bob": "",
-        "matt": "",
-        "tom": "",
-        "stacy": "",
-        "eddie": "",
-        "maggie": ""
-        }
+  "history": {
+    "2023": {
+      "ruthie": "",
+      "bob": "",
+      "matt": "",
+      "tom": "",
+      "stacy": "",
+      "eddie": "",
+      "maggie": ""
     },
-  "assignments": {}
+    "2024": {
+      "ruthie": "",
+      "bob": "",
+      "matt": "",
+      "tom": "",
+      "stacy": "",
+      "eddie": "",
+      "maggie": ""
+    },
+    "2025": {
+      "tom": "maggie",
+      "ruthie": "eddie",
+      "maggie": "tom",
+      "eddie": "matt",
+      "matt": "ruthie",
+      "bob": "stacy",
+      "stacy": "bob"
+    }
+  },
+  "assignments": {
+    "2025": {
+      "tom": "maggie",
+      "ruthie": "eddie",
+      "maggie": "tom",
+      "eddie": "matt",
+      "matt": "ruthie",
+      "bob": "stacy",
+      "stacy": "bob"
+    }
+  }
 }
