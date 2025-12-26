@@ -21,10 +21,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 DATA_FILE = "data.json"
 EXCLUSION_WINDOW = 3
 
-# CHANGE THIS
-SECRET_KEY = "CHANGE_ME_TO_RANDOM_STRING"
+SECRET_KEY = "HOHOHO"
 
-# Permanent exclusions (e.g. spouses)
 PERMANENT_EXCLUSIONS = {
     "ruthie": {"tom"},
     "matt": {"stacy"},

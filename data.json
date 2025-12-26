@@ -9,15 +9,15 @@
       "password_hash": "REPLACE_WITH_HASH"
     },
     "matt": {
-      "display": "Charlie",
-      "password_hash": "REPLACE_WITH_HASH"
+      "display": "Matt",
+      "password_hash": "pbkdf2:sha256:260000$9iahQQwiMc5Opo9u$1728c7e7e8a40280a61bd5bb068989dd482faef577bc3057a04fc917923cd77e"
     },
     "tom": {
       "display": "Tom",
       "password_hash": "REPLACE_WITH_HASH"
     },
     "stacy": {
-      "display": "Eve",
+      "display": "Stacy",
       "password_hash": "REPLACE_WITH_HASH"
     },
     "eddie": {
