@@ -1,6 +1,7 @@
 import unittest
 import copy
 from secretSanta import (
+    PERMANENT_EXCLUSIONS,
     build_exclusions,
     assign,
     validate_exclusions

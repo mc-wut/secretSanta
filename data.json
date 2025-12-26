@@ -1,7 +1,7 @@
 {
   "participants": {
     "ruthie": {
-      "display": "Alice",
+      "display": "Ruthie",
       "password_hash": "REPLACE_WITH_HASH"
     },
     "bob": {
@@ -13,7 +13,7 @@
       "password_hash": "REPLACE_WITH_HASH"
     },
     "tom": {
-      "display": "Dave",
+      "display": "Tom",
       "password_hash": "REPLACE_WITH_HASH"
     },
     "stacy": {
@@ -21,11 +21,11 @@
       "password_hash": "REPLACE_WITH_HASH"
     },
     "eddie": {
-      "display": "Frank",
+      "display": "Eddie",
       "password_hash": "REPLACE_WITH_HASH"
     },
     "maggie": {
-      "display": "Grace",
+      "display": "Maggie",
       "password_hash": "REPLACE_WITH_HASH"
     }
   },
