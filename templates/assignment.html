@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Secret Santa 🎅</title>
+
+    <!-- CHRISTMAS THEME -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <center>
+        <h1>❄️ Secret Santa {{ year }} ❄️</h1>
+        <h2>You are buying a gift for:</h2>
+
+        <h1 style="margin-top: 1rem;">
+            🎁 {{ recipient|capitalize }} 🎁
+        </h1>
+    </center>
+</div>
+
+</body>
+</html>

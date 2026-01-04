@@ -56,6 +56,15 @@
       "matt": "ruthie",
       "bob": "stacy",
       "stacy": "bob"
+    },
+    "2026": {
+      "maggie": "stacy",
+      "stacy": "maggie",
+      "tom": "matt",
+      "ruthie": "bob",
+      "matt": "tom",
+      "bob": "eddie",
+      "eddie": "ruthie"
     }
   },
   "assignments": {
@@ -67,6 +76,15 @@
       "matt": "ruthie",
       "bob": "stacy",
       "stacy": "bob"
+    },
+    "2026": {
+      "maggie": "stacy",
+      "stacy": "maggie",
+      "tom": "matt",
+      "ruthie": "bob",
+      "matt": "tom",
+      "bob": "eddie",
+      "eddie": "ruthie"
     }
   }
 }

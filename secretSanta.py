@@ -11,8 +11,8 @@ import os
 import random
 import tempfile
 from datetime import datetime
-from flask import Flask, request, session, redirect, render_template_string
-from werkzeug.security import generate_password_hash, check_password_hash
+from flask import Flask, request, session, redirect, render_template, url_for
+from werkzeug.security import check_password_hash
 
 # =====================
 # CONFIG
@@ -132,39 +132,22 @@ def run_yearly_assignment():
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
 
-LOGIN_TEMPLATE = """
-<h2>Secret Santa Login</h2>
-<form method="post">
-  <input name="username" placeholder="Name" required>
-  <input name="password" type="password" placeholder="Password" required>
-  <button type="submit">Login</button>
-  {% if error %}<p style="color:red">{{ error }}</p>{% endif %}
-</form>
-"""
-
-ASSIGNMENT_TEMPLATE = """
-<h1>🎅 Secret Santa</h1>
-<p>You are buying a gift for:</p>
-<h2>{{ recipient }}</h2>
-<a href="/logout">Logout</a>
-"""
-
 @app.route("/", methods=["GET", "POST"])
 def login():
     data = load_data()
 
     if request.method == "POST":
-        user = request.form["username"]
-        pw = request.form["password"]
+        user = request.form.get("name","").lower()
+        pw = request.form.get("password","")
 
         entry = data["participants"].get(user)
         if entry and check_password_hash(entry["password_hash"], pw):
             session["user"] = user
             return redirect("/assignment")
 
-        return render_template_string(LOGIN_TEMPLATE, error="Invalid login")
+        return render_template("login.html", error="Invalid login")
 
-    return render_template_string(LOGIN_TEMPLATE)
+    return render_template("login.html")
 
 @app.route("/assignment")
 def assignment_view():
@@ -179,9 +162,12 @@ def assignment_view():
     receiver_id = data["assignments"][year].get(giver)
     receiver = data["participants"][receiver_id]["display"]
 
-    return render_template_string(ASSIGNMENT_TEMPLATE, recipient=receiver)
+    return render_template("assignment.html", recipient=receiver, year=year)
 
 @app.route("/logout")
 def logout():
     session.clear()
     return redirect("/")
+
+if __name__ == "__main__":
+    app.run()

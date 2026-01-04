@@ -1,0 +1,81 @@
+/* Christmas Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Nunito:wght@300;400;600&display=swap');
+
+:root {
+    --bg-blue: #0b1d33;
+    --card-blue: #13294b;
+    --snow-white: #f8f9fa;
+    --accent-ice: #a7c7e7;
+    --accent-gold: #d4af37;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: linear-gradient(
+        180deg,
+        #0b1d33 0%,
+        #13294b 100%
+    );
+    color: var(--snow-white);
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Tangerine', cursive;
+    color: var(--snow-white);
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: rgba(19, 41, 75, 0.95);
+    border-radius: 14px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: none;
+    background: #e9f1fa;
+    font-size: 1rem;
+}
+
+button {
+    background: linear-gradient(
+        135deg,
+        var(--accent-ice),
+        var(--accent-gold)
+    );
+    color: #0b1d33;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}

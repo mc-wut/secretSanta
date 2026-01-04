@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secret Santa Login 🎄</title>
+
+    <!-- Christmas theme CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <center>
+        <h1>🎄 McLaughlin Secret Santa 🎄 </h1>
+
+        <form method="post">
+            <label for="name">Name</label>
+            <input
+                id="name"
+                name="name"
+                autocomplete="username"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                required
+            >
+cle
+            <button type="submit">Reveal My Assignment 🎅</button>
+        </form>
+    </center.
+    {% if error %}
+        <p style="color: #ffb3b3; margin-top: 1rem;">
+            {{ error }}
+        </p>
+    {% endif %}
+</div>
+
+</body>
+</html>
